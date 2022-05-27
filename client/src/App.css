@@ -1,0 +1,77 @@
+.app {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.container {
+  height: 450px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 10px 8px;
+  margin-top: 16px;
+  color: #fff;
+  background-color: #282c34;
+  border-radius: 4px;
+  border: 1px solid #282c34;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #282c34;
+}
+
+input {
+  padding: 10px 8px;
+  border-radius: 4px;
+  border: 1px solid rgb(178, 176, 176);
+}
+
+.input-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-container > span {
+  color: tomato;
+  font-size: 12px;
+}
+
+input.error {
+  border: 1px solid tomato;
+}
+
+.response-message {
+  padding: 10px;
+  margin-top: 12px;
+  font-size: 14px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.response-message.success {
+  background-color: rgb(90, 180, 17, 0.3);
+  color: rgb(90, 180, 17);
+}
+
+.response-message.not-success {
+  background-color: rgba(255, 99, 71, 0.3);
+  color: rgba(255, 99, 71, 1);
+}
