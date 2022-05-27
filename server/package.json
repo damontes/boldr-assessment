@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "sls offline start --httpPort 3001",
+    "deploy": "sls deploy -s dev"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1144.0",
+    "express": "^4.17.1",
+    "serverless-dynamodb-local": "^0.2.40",
+    "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {
+    "serverless": "^3.18.2",
+    "serverless-offline": "^8.8.0"
+  }
+}
